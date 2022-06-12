@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Ankieta</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='project.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="content">
+                <h1>Pytania z zakresu systemów do automatycznego rozpoznawania i monitoringu emocji</h1>
+                <form class="generated-form" method="POST">
+                        <fieldset>
+                            <legend>Czy spotkał_ś się z określeniem "systemy automatycznie rozpoznające emocje"?</legend>
+                            <input type="radio" id="yes" name="haveMet" value="TRUE" required>
+                            <label for="yes">Tak</label><br>
+                            <input type="radio" id="no" name="haveMet" value="FALSE">
+                            <label for="no">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy twoim zdaniem system automatycznie rozpoznający emocje i sztuczna inteligencja to powiązane ze sobą określenia?</legend>
+                            <input type="radio" id="yes1" name="SIvsSystemy" value="TRUE" required>
+                            <label for="yes1">Tak</label><br>
+                            <input type="radio" id="no1" name="SIvsSystemy" value="FALSE">
+                            <label for="no1">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Jakie uczucia towarzyszą ci z określeniem "system automatycznie rozpoznający emocje"?</legend>
+                            <input type="radio" id="negative" name="feelings" value="Negat" required>
+                            <label for="negative">Negatywne</label><br>
+                            <input type="radio" id="neutral" name="feelings" value="Neutr">
+                            <label for="neutral">Neutralne</label><br>
+                            <input type="radio" id="positive" name="feelings" value="Pozyt">
+                            <label for="positive">Pozytywne</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy twoim zdaniem system automatycznie rozpoznający emocje jest czymś łatwym do znalezienia w twoim otoczeniu?</legend>
+                            <input type="radio" id="yes2" name="EasyToFind" value="TRUE" required>
+                            <label for="yes2">Tak</label><br>
+                            <input type="radio" id="no2" name="EasyToFind" value="FALSE">
+                            <label for="no2">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Nawiązując do pytania powyżej, wskaż przykłady gdzie mogłaby zostać zastosowana taka technologia:</legend>
+                            <input type="checkbox" id="ETFEanswer1" name="EasyToFindExample1" value="TRUE">
+                            <input type='hidden' value='FALSE' name='EasyToFindExample1'>
+                            <label for="ETFEanswer1">Kontrola zachowań kierowców</label><br>
+                            <input type="checkbox" id="ETFEanswer2" name="EasyToFindExample2" value="TRUE">
+                            <input type='hidden' value='FALSE' name='EasyToFindExample2'>
+                            <label for="ETFEanswer2">Analiza tekstu pisanego</label><br>
+                            <input type="checkbox" id="ETFEanswer3" name="EasyToFindExample3" value="TRUE">
+                            <input type='hidden' value='FALSE' name='EasyToFindExample3'>
+                            <label for="ETFEanswer3">Kontrolowanie życia ludzi</label><br>
+                            <input type="checkbox" id="ETFEanswer4" name="EasyToFindExample4" value="TRUE">
+                            <input type='hidden' value='FALSE' name='EasyToFindExample4'>
+                            <label for="ETFEanswer4">Analiza mowy</label><br>
+                            <input type="checkbox" id="ETFEanswer5" name="EasyToFindExample5" value="TRUE">
+                            <input type='hidden' value='FALSE' name='EasyToFindExample5'>
+                            <label for="ETFEanswer5">Analiza ruchu</label><br>
+                            <input type="checkbox" id="ETFEanswer6" name="EasyToFindExample6" value="TRUE">
+                            <input type='hidden' value='FALSE' name='EasyToFindExample6'>
+                            <label for="ETFEanswer6">Rozmowa z użytkownikiem</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy jesteś za wprowadzaniem takich systemów do swojego życia codziennego?</legend>
+                            <input type="radio" id="yes3" name="areUseful" value="TRUE" required>
+                            <label for="yes3">Tak</label><br>
+                            <input type="radio" id="no3" name="areUseful" value="FALSE">
+                            <label for="no3">Nie</label><br>
+                            <input type="radio" id="idk3" name="areUseful" value="IDK">
+                            <label for="idk3">Nie wiem</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy obawiasz się możliwości takich systemów?</legend>
+                            <input type="radio" id="yes4" name="fear" value="TRUE" required>
+                            <label for="yes4">Tak</label><br>
+                            <input type="radio" id="no4" name="fear" value="FALSE">
+                            <label for="no4">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy uważasz, że takie systemy mogą stanowić potencjalne zagrożenie dla człowieka (np. dla jego bezpieczeństwa)?</legend>
+                            <input type="radio" id="yes5" name="endangered" value="TRUE" required>
+                            <label for="yes5">Tak</label><br>
+                            <input type="radio" id="no5" name="endangered" value="FALSE">
+                            <label for="no5">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Z czym kojarzy ci się monitoring? Zaznacz przykładowe zastosowanie monitoringu:</legend>
+                            <input type="checkbox" id="LManswer1" name="linkMonitoring1" value="TRUE">
+                            <input type='hidden' value='FALSE' name='linkMonitoring1'>
+                            <label for="LManswer1">Kamera na budynku/w pomieszczeniu</label><br>
+                            <input type="checkbox" id="LManswer2" name="linkMonitoring2" value="TRUE">
+                            <input type='hidden' value='FALSE' name='linkMonitoring2'>
+                            <label for="LManswer2">Śledzenie zachowań użytkowników w internecie</label><br>
+                            <input type="checkbox" id="LManswer3" name="linkMonitoring3" value="TRUE">
+                            <input type='hidden' value='FALSE' name='linkMonitoring3'>
+                            <label for="LManswer3">GPS</label><br>
+                            <input type="checkbox" id="LManswer4" name="linkMonitoring4" value="TRUE">
+                            <input type='hidden' value='FALSE' name='linkMonitoring4'>
+                            <label for="LManswer4">Ochrona własności</label><br>
+                            <input type="checkbox" id="LManswer5" name="linkMonitoring5" value="TRUE">
+                            <input type='hidden' value='FALSE' name='linkMonitoring5'>
+                            <label for="LManswer5">Zapisywanie informacji</label><br>
+                            <input type="checkbox" id="LManswer6" name="linkMonitoring6" value="TRUE">
+                            <input type='hidden' value='FALSE' name='linkMonitoring6'>
+                            <label for="LManswer6">Nieświadome nagrywanie bez wyrażenia zgody</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy twoim zdaniem stałe monitorowanie ludzi jest do zaakceptowania?</legend>
+                            <input type="radio" id="yes6" name="isGood" value="TRUE" required>
+                            <label for="yes6">Tak</label><br>
+                            <input type="radio" id="no6" name="isGood" value="FALSE">
+                            <label for="no6">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy świadomość bycia obserwowanym wpływa negatywnie na twoje samopoczucie?</legend>
+                            <input type="radio" id="yes7" name="isAffecting" value="TRUE" required>
+                            <label for="yes7">Tak</label><br>
+                            <input type="radio" id="no7" name="isAffecting" value="FALSE">
+                            <label for="no7">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy pozwol_byś na zainstalowanie całodobowego systemu monitorującego w swoim domu/mieszkaniu (np. w celu pomocy w codziennych lub awaryjnych sytuacjach)?</legend>
+                            <input type="radio" id="yes8" name="wouldAccept" value="TRUE" required>
+                            <label for="yes8">Tak</label><br>
+                            <input type="radio" id="no8" name="wouldAccept" value="FALSE">
+                            <label for="no8">Nie</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy uważasz, że monitoring ludzi z zaburzeniami emocjonalnymi może przynosić pozytywne skutki (np. pomóc w ich codziennym życiu)?</legend>
+                            <input type="radio" id="yes9" name="isHelping" value="TRUE" required>
+                            <label for="yes9">Tak</label><br>
+                            <input type="radio" id="no9" name="isHelping" value="FALSE">
+                            <label for="no9">Nie</label><br>
+                            <input type="radio" id="idk9" name="isHelping" value="IDK">
+                            <label for="idk9">Nie wiem</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Jak zastosowanie takich systemów u osób z zaburzeniami emocjonalnymi twoim zdaniem będzie wpływać na ich stan zdrowotny? </legend>
+                            <input type="radio" id="strongNo" name="emotionalDisorders" value="ZdecydNegat" required>
+                            <label for="strongNo">Zdecydowanie negatywnie</label><br>
+                            <input type="radio" id="weakNo" name="emotionalDisorders" value="RaczNegat">
+                            <label for="weakNo">Raczej negatywnie</label><br>
+                            <input type="radio" id="notChanging" name="emotionalDisorders" value="0zmian">
+                            <label for="notChanging">Nie zmieni to ich stanu zdrowotnego</label><br>
+                            <input type="radio" id="weakYes" name="emotionalDisorders" value="RaczPozyt">
+                            <label for="weakYes">Raczej pozytywnie</label><br>
+                            <input type="radio" id="strongYes" name="emotionalDisorders" value="ZdecydPozyt">
+                            <label for="strongYes">Zdecydowanie pozytywnie</label><br><br>
+                        </fieldset>
+                        <br>
+                <input type="submit" value="Zakończ" />
+                </form>
+            </div>
+    <footer>Copyright © 2022 Marta Arendt & Maciej Mechliński</footer>
+</body>
+</html>

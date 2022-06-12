@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Ankieta</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='project.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="content">
+        <h1>Pytanie o wiedzę z zakresu sztucznej inteligencji</h1>
+        <form class="generated-form" method="POST">
+                <fieldset>
+                    <legend>Wybierz z poniższych te odpowiedzi, które najbardziej ci się kojarzą z zagadnieniem: </legend>
+                    <input type="checkbox" id="answer1" name="quizSI1" value="TRUE">
+                    <input type='hidden' value='FALSE' name='quizSI1'>
+                    <label for="answer1">Przejęcie kontroli nad światem</label><br>
+                    <input type="checkbox" id="answer2" name="quizSI2" value="TRUE">
+                    <input type='hidden' value='FALSE' name='quizSI2'>
+                    <label for="answer2">Roboty/pojazdy autonomiczne</label><br>
+                    <input type="checkbox" id="answer3" name="quizSI3" value="TRUE">
+                    <input type='hidden' value='FALSE' name='quizSI3'>
+                    <label for="answer3">Zakupy i reklamy online</label><br>
+                    <input type="checkbox" id="answer4" name="quizSI4" value="TRUE">
+                    <input type='hidden' value='FALSE' name='quizSI4'>
+                    <label for="answer4">Wyszukiwanie w internecie (np. Google Translate)</label><br>
+                    <input type="checkbox" id="answer5" name="quizSI5" value="TRUE">
+                    <input type='hidden' value='FALSE' name='quizSI5'>
+                    <label for="answer5">Kontrolowanie świateł ulicznych</label><br>
+                    <input type="checkbox" id="answer6" name="quizSI6" value="TRUE">
+                    <input type='hidden' value='FALSE' name='quizSI6'>
+                    <label for="answer6">Cyberbezpieczeństwo</label><br><br>
+                </fieldset>
+                <br>
+            <input type="submit" value="Dalej" />
+        </form>
+    </div>
+    <footer>Copyright © 2022 Marta Arendt & Maciej Mechliński</footer>
+</body>
+</html>

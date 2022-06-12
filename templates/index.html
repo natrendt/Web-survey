@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Ankieta</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='project.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <div id="content">
+                <h1>Ankieta</h1>
+                <p>Jesteśmy studentami 3. roku kierunku Inżynieria Biomedyczna na Politechnice Gdańskiej i w ramach projektu z przedmiotów "Rozwój aplikacji internetowych w medycynie" oraz
+                "Hurtownie i eksploracja danych" przeprowadzamy ankietę na temat stosunku do systemów automatycznie monitorujących emocje. Zapraszamy do wypełnienia ankiety!</p>
+                <form class="generated-form" method="POST">
+                        <fieldset>
+                            <legend>Płeć</legend>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Mężczyzna</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Kobieta</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Inne</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Wiek</legend>
+                            <input type="radio" id="<18" name="age" value="<18" required>
+                            <label for="<18">&#60;18</label><br>
+                            <input type="radio" id="18-25" name="age" value="18-25">
+                            <label for="18-25">18-25</label><br>
+                            <input type="radio" id="26-35" name="age" value="26-35">
+                            <label for="26-35">26-35</label><br>
+                            <input type="radio" id="36-45" name="age" value="36-45">
+                            <label for="36-45">36-45</label><br>
+                            <input type="radio" id="46-55" name="age" value="46-55">
+                            <label for="46-55">46-55</label><br>
+                            <input type="radio" id="56-65" name="age" value="56-65">
+                            <label for="56-65">56-65</label><br>
+                            <input type="radio" id="65+" name="age" value="65+">
+                            <label for="65+">65+</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Miejsce zamieszkania</legend>
+                            <input type="radio" id="powyzej500" name="residence" value="500k+" required>
+                            <label for="powyzej500">Miasto (powyżej 500 tysięcy mieszkańców)</label><br>
+                            <input type="radio" id="100do500" name="residence" value="100-500k">
+                            <label for="100do500">Miasto (od 100 do 500 tysięcy mieszkańców)</label><br>
+                            <input type="radio" id="50do100" name="residence" value="50-100k">
+                            <label for="50do100">Miasto (od 50 do 100 tysięcy mieszkańców)</label><br>
+                            <input type="radio" id="do50" name="residence" value="0-50k">
+                            <label for="do50">Miasto (do 50 tysięcy mieszkańców)</label><br>
+                            <input type="radio" id="wies" name="residence" value="wies">
+                            <label for="wies">Wieś</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Wykształcenie</legend>
+                            <input type="radio" id="podstawowe" name="education" value="podst" required>
+                            <label for="podstawowe">Podstawowe</label><br>
+                            <input type="radio" id="gimnazjalne" name="education" value="gim">
+                            <label for="gimnazjalne">Gimnazjalne</label><br>
+                            <input type="radio" id="zawodowe" name="education" value="zawod">
+                            <label for="zawodowe">Zawodowe</label><br>
+                            <input type="radio" id="srednie" name="education" value="sred">
+                            <label for="srednie">Średnie</label><br>
+                            <input type="radio" id="wyzsze" name="education" value="wyz">
+                            <label for="wyzsze">Wyższe</label><br>
+                            <input type="radio" id="wTrakcie" name="education" value="studia">
+                            <label for="wTrakcie">W trakcie studiów</label><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Czy spotkał_ś się kiedyś z pojęciem "sztuczna inteligencja"?</legend>
+                            <input type="radio" id="yes" name="SIknowledge" value="TRUE" required>
+                            <label for="yes">Tak</label><br>
+                            <input type="radio" id="no" name="SIknowledge" value="FALSE">
+                            <label for="no">Nie</label><br><br>
+                        </fieldset>
+                        <br>
+                <input type="submit" value="Dalej" />
+                </form>
+            </div>
+    <footer>Copyright © 2022 Marta Arendt & Maciej Mechliński</footer>
+</body>
+</html>
