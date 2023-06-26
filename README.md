@@ -21,3 +21,4 @@ ___TO DO:___
 * użycie lepszych metod analitycznych dla danego datasetu
 * ciekawsza forma prezentacji danych
 * przeprowadzenia badania ponownie na innej grupie osób (bardziej zróżnicowanej wiekowo, wykształceniem, miejscem zamieszkania)
+* dodanie opisu pliku *readme.md* w języku angielskim 
